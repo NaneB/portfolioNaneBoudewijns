@@ -1,0 +1,11 @@
+<% include header %>
+
+
+<% pages.forEach(function(page){ %>
+
+    <h2><%- page.title %></h2>
+    <%- page.text %>
+
+  <% }); %>
+
+<% include footer %>

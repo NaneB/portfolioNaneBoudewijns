@@ -1,0 +1,19 @@
+<% include header %>
+
+<h1>Nane's Blog</h1>
+
+<div class="container">
+  <% posts.forEach(function(post){ %>
+    <div class="post">
+    <h3><a href="<%- post.link %>">
+        <%- post.title %></a></h3>
+    <p class="italic"><%- post.date %></p>
+    <p><%- post.summary %>
+        <a class="nowrap" href="<%- post.link %>">Read more</a>
+    </p>
+    
+    </div>
+  <% }); %>
+</div>
+
+<% include footer %>
