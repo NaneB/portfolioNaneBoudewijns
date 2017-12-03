@@ -3,7 +3,7 @@ var path = require("path");
 
 var app = express();
 
-app.set('port', (process.env.PORT || 5000));
+app.set('port', (process.env.PORT || 3000));
 
 var postFile = require('./data/post.json');
 var pageFile = require('./data/page.json');
@@ -44,13 +44,19 @@ app.get(/^\/(\w*-\w*-\d\d\/\d\d)$/, function(req, res) {
 });
 
 
+//ERROR PAGE NOT FOUND
 
+app.get('*', function(req, res){
+  res.render("notFound");
+});
+
+/*
 app.get('/about', function(req, res){ 
  	res.render('about',{
         pages: pageFile.bPages
     });
 });
-
+*/
 
 /*app.listen(3000);*/
 

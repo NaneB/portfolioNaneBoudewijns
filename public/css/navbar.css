@@ -1,0 +1,40 @@
+nav, #menu-trigger, #circle-container{
+  position: fixed;
+}
+#menu-trigger, #circle-container{
+  right: 20px; 
+  top: 10px; 
+}
+#menu-trigger, #circle-container{
+  top: 10px;
+  right: 20px; 
+}
+
+@-moz-document url-prefix() {
+    nav{
+        top: 0px;
+        right: 0px;
+    }
+}
+
+#menu-trigger{
+  z-index: 3;   
+}
+#circle-container{
+  z-index: 2;
+}
+#nav-text{
+    z-index: 5;
+}
+nav{
+  filter: url('#gooey');
+}
+#hamburger{
+  z-index: 4;
+  position: fixed;
+  top: 45px;
+  right: 55px;
+}
+svg#circles a{
+    display: none;
+}

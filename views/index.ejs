@@ -1,19 +1,43 @@
 <% include header %>
-
-<h1>Nane's Blog</h1>
-
-<div class="container">
-  <% posts.forEach(function(post){ %>
-    <div class="post">
-    <h3><a href="<%- post.link %>">
-        <%- post.title %></a></h3>
-    <p class="italic"><%- post.date %></p>
-    <p><%- post.summary %>
-        <a class="nowrap" href="<%- post.link %>">Read more</a>
-    </p>
-    
+    <div id="fade"></div>
+    <div id="me"></div>
+    <div id="home" class="section">
+        <h1>Nane</h1>
     </div>
-  <% }); %>
-</div>
+    <div id="about" class="section">
+        <h3>Hallo,</h3>
+            <p>
+            Mijn naam is Nane Boudewijns.
+            Op 12 augustus 1993 werd ik
+            geboren. Als kind was ik graag bezig
+            met het creëren van creatieve en
+            vernuftige uitvindingetjes.
+            Tegenwoordig zijn plakband en
+            karton ingeruild voor tools als Adobe
+            Photoshop en Javacript. Ik bijt me
+            graag vast in boeiende probleemstellingen
+            om deze om te zetten in
+            mooie grafische of digitale uitingen.
+            Rustig, zorgvuldig en ruimdenkend
+            zijn woorden die me omschrijven.</p>
+    </div>
+    <div id="work" class="section container">
+      <% posts.forEach(function(post){ %>
+        <div class="post">
+        <h3><a href="<%- post.link %>">
+            <%- post.title %></a></h3>
+        <p class="italic"><%- post.date %></p>
+        <p><%- post.summary %>
+            <a class="nowrap" href="<%- post.link %>">Read more</a>
+        </p>
+
+        </div>
+      <% }); %>
+    </div>
+    <div id="cv"></div>
+    <div id="cv-page" class="section">
+        
+        <a href="/doc/CV-Nane Boudewijns.pdf" download>Download mijn CV</a>
+    </div>
 
 <% include footer %>

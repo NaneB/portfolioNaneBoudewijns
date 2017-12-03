@@ -1,14 +1,172 @@
 <!doctype html>
 <html>
 	<head>
-		<title>Blog</title>
+		<title>Nane Boudewijns</title>
         <link href="https://fonts.googleapis.com/css?family=Quicksand|Satisfy" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="/css/reset.css">
 		<link rel="stylesheet" type="text/css" href="/css/main.css">
+        <link rel="stylesheet" type="text/css" href="/css/navbar.css">
+        
 		<meta charset="utf-8">
 	</head>
-	<body>
+	
 
 <nav>
-    <a href="/">Home</a> | <a href="/about">About</a>
+  <div id='menu-trigger'>
+   <svg id='menu' height="100" width="100">
+    <circle id="circle-menu" cx="50" cy="50" r="40" fill="white"/>
+     <animate
+           xlink:href="#circle-menu"
+           attributeName="r"
+           to="44" 
+           dur="0.82s"
+           begin="click"
+     />
+  </svg> 
+ </div>  
+
+<div id="circle-container">
+  <svg id='circles' height="500" width="100">
+    <circle id="circle-one" cx="50" cy="50" r="30" fill="white"/>
+    <a id="text-one" href=""><text font-weight="bold" fill="#666" x="50%" y="28%" text-anchor="middle" dy=".3em">HOME
+    </text></a>
+    <circle id="circle-two"cx="50" cy="50" r="30" fill="white"/>  
+    <a id="text-two" href=""><text font-weight="bold" fill="#666" x="50%" y="43%" text-anchor="middle" dy=".3em">OVER
+    </text></a>
+    <circle id="circle-three" cx="50" cy="50" r="30" fill="white"/>
+    <a id="text-three" href=""><text font-weight="bold" fill="#666" x="50%" y="58%" text-anchor="middle" dy=".3em">WERK
+    </text></a>
+    <circle id="circle-four" cx="50" cy="50" r="30" fill="white"/>
+    <a id="text-four" href=""><text font-weight="bold" fill="#666" x="50%" y="73%" text-anchor="middle" dy=".3em">CV
+    </text></a>
+</svg>
+  </svg>
+</div>
+
+
+<svg>
+  <defs>
+    <filter id="gooey">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="4" result="blur" />
+      <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -8" result="colormatrix" />
+      <feBlend in="SourceGraphic" in2="colormatrix" />
+    </filter>
+  </defs>
+</svg>
 </nav>
+
+<!--HAMBURGER-->
+    <svg id="hamburger" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 30 30" style="enable-background:new 0 0 30 30;">
+    <style>
+        #line-one,#line-two,#line-three{fill: #696969;}
+
+	@keyframes line-oneAnimation {
+		0% {
+			opacity: 1;
+		}
+		50% {
+			opacity: 0;
+		}
+    100% {
+			opacity: 0;
+		}
+	}
+
+	.line-one {
+		transform-origin: 50% 50% !important;
+		animation: line-oneAnimation 1.5s ease forwards;
+	}
+    .line-one-reverse {
+        animation-direction: reverse;
+	}
+
+	@keyframes line-twoAnimation {
+		0% {
+			transform: rotate(0deg) translate(0px, 0px) scale(1, 1);
+		}
+		50% {
+			transform: scale(0.5, 1);
+		}
+    100% {
+			transform: rotate(45deg) translate(0px, 9px) scale(1, 1);
+		}
+	}
+
+	.line-two {
+		transform-origin: 50% 50% !important;
+		animation: line-twoAnimation 2s ease forwards;
+	}
+	.line-two-reverse{
+    animation-direction: reverse;
+	}
+
+
+	@keyframes line-threeAnimation {
+		0% {
+			transform: rotate(0deg) translate(0px, 0px) scale(1, 1);
+		}
+		50% {
+			transform: scale(0.5, 1);
+		}
+    100% {
+			transform: rotate(-45deg) translate(0px, -9px) scale(1, 1);
+		}
+	}
+
+	.line-three {
+		transform-origin: 50% 50% !important;
+		animation: line-threeAnimation 1.5s ease forwards;
+	}
+  .line-three-reverse {
+    animation-direction: reverse;
+	}
+    </style>
+    <svg version="1.1" id="S1IZ1tiCaxM" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 30 30" style="enable-background:new 0 0 30 30;" xml:space="preserve">
+        <path id="line-two" d="M29,6.271C29,7.226,28.226,8,27.271,8H2.729C1.774,8,1,7.226,1,6.271V5.729C1,4.774,1.774,4,2.729,4h24.541&#10;&#9;C28.226,4,29,4.774,29,5.729V6.271z" />
+        <path id="line-one" d="M29,15.271C29,16.226,28.226,17,27.271,17H2.729C1.774,17,1,16.226,1,15.271v-0.541C1,13.774,1.774,13,2.729,13&#10;&#9;h24.541C28.226,13,29,13.774,29,14.729V15.271z" />
+        <path id="line-three" d="M29,24.271C29,25.226,28.226,26,27.271,26H2.729C1.774,26,1,25.226,1,24.271v-0.541C1,22.774,1.774,22,2.729,22&#10;&#9;h24.541C28.226,22,29,22.774,29,23.729V24.271z" />
+          <script type="text/javascript">
+            var trigger = document.getElementById('menu-trigger');
+            var hamburger = document.getElementById('hamburger');
+            var firstLine = document.getElementById('line-one');
+            var secondLine = document.getElementById('line-two');
+            var thirdLine = document.getElementById('line-three');
+            var clicked = false;
+
+            trigger.onclick = function(){
+              transformHamburger();
+            }
+            hamburger.onclick = function(){
+              transformHamburger();
+            }
+
+            function transformHamburger(){
+              if(clicked==false){
+                firstLine.classList.remove('line-one-reverse');
+                secondLine.classList.remove('line-two-reverse');
+                thirdLine.classList.remove('line-three-reverse');
+                clicked=true;
+              }else{
+                firstLine.classList.add('line-one-reverse');
+                secondLine.classList.add('line-two-reverse');
+                thirdLine.classList.add('line-three-reverse');
+                clicked=false;
+              }
+              firstLine.classList.remove('line-one');
+              secondLine.classList.remove('line-two');
+              thirdLine.classList.remove('line-three');
+              setTimeout(function() {
+                    firstLine.classList.add('line-one');
+                    secondLine.classList.add('line-two');
+                    thirdLine.classList.add('line-three');
+              }, 10);
+            };
+
+          </script>
+      </svg>
+</svg>
+    
+  <!--END HAMBURGER-->
+
+
+
