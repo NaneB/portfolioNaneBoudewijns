@@ -4,7 +4,7 @@
      "title": "2048",
      "link": "Portfolio-2048",
      "url": "https://naneb.github.io/2048-repo/",
-     "image": "../img/2048.jpg",
+     "image": "/img/2048.jpg",
      "summary": "Het <b>spelletje 2048</b> volledig van nul nagemaakt met jQuery, HTML en CSS<br/>",
      "text": "<p>2048 is een heel simpel spel waarbij je blokjes moet verschuiven tot je aan het getal 2048 komt. Omdat het zo simpel lijkt dacht ik dit te kunnen programmeren voor een opdracht van school waar eigenlijk niet veel tijd voor uitgerekend was. Al ontdekte ik dat  er heel wat meer logica achter zit dan op eerste zicht te zien is. Voor de scope van de opdracht was het niet geschikt. Maar later besloot ik dit toch af te werken omdat ik het zo interessant vond. Ik gebruikte enkel jQuery, HTML, CSS en een notitieboekje voor mijn gedachtengang te noteren. Via onderstaande link kan u de uitkomst bekijken</p></br>"
    },
@@ -12,7 +12,7 @@
      "title": "Mugs &amp; Hugs",
      "link": "Portfolio-MugsAndHugs",
      "url": "http://naneboudewijns.wpdevcloud.com/",
-     "image": "../img/mugsandhugs.jpg",
+     "image": "/img/mugsandhugs.jpg",
      "summary": "Mugs &amp; Hugs is een fictieve <b>webshop voor koffieliefhebbers</b>. Dit was een oefening voor het vak WebmediaProductie3 in de richting Grafische en Digitale media aan AP-Hogeschool. De webshop is gemaakt met Wordpress<br/>",
      "text": "Mugs &amp; Hugs is een fictieve <b>webshop voor koffieliefhebbers</b>. Dit was een oefening voor het vak WebmediaProductie3 in de richting Grafische en Digitale media aan AP-Hogeschool. De webshop is gemaakt met Wordpress. Ik maakte een child-thema gebaseerd op woocommerce’s storefront. Hoe ik te werk ging kan je op de webshop zelf lezen onder 'blog'.</p></br>"
    },
@@ -20,7 +20,7 @@
      "title": "N.E.W. App",
      "link": "Portfolio-newsapp",
      "url": "https://morning-ridge-94177.herokuapp.com/",
-     "image": "../img/news.jpg",
+     "image": "/img/news.jpg",
      "summary": "Deze <b>nieuw-app</b> is een oefening op Node.js en Express.js<br/>",
      "text": "<p>Deze <b>nieuw-app</b> is een oefening op Node.js en Express.js. Ik maakte deze korte opdracht voor school voor het vak Crossmedia Technologie in mijn opleiding Grafische en Digitale media aan de AP-Hogeschool.</p></br>"
    },
@@ -28,7 +28,7 @@
      "title": "Flexbox oefening",
      "link": "Portfolio-flexboxoefening",
      "url": "https://naneb.github.io/flex-repo/",
-     "image": "../img/flex.jpg",
+     "image": "/img/flex.jpg",
      "summary": "Een simpele oefening op het gebruik van <b>css Flexbox</b><br/>",
      "text": "<p>Een simpele oefening op het gebruik van <b>css Flexbox</b>. Bekijk deze oefening door op de knop hieronder te klikken.<br/></p>"
    },
@@ -36,7 +36,7 @@
      "title": "Het Zing Ding",
      "link": "Portfolio-zingding",
      "url": "https://www.belg.be/40652/nieuws/elf-jonge-technische-talenten-verbluffen-met-hun-sociaal-project/",
-     "image": "../img/zingding.jpg",
+     "image": "/img/zingding.jpg",
      "summary": "Het Cera-award winnende Zing Ding. Gemaakt in mijn tweede jaar Multimedia en Communicatie Technologie. Het Zing Ding is een <b>online platform voor kinderen</b> om al spelenderwijs met muziek in contact te komen<br/>",
      "text": "Koor&amp;Stem droomde van een online platform als didactische ondersteuning bij muziekonderwijs, een creatief plaftorm dat kinderen zou aanspreken en hun muzikale creativiteit zou prikkelen.Karel De Grote Hogeschool, campus Hoboken, maakte van deze vraag een projectopdracht voor hun tweede bachelor Multimedia en communicatie. Teams van telkens twee studenten ‘Web’ en twee studenten ‘Game’ gooiden al hun technologische kennis en hun creativiteit in de strijd. Team Zeppos met Nane, Verena, Van Nith en Dorien ontwikkelden in goede samenwerking met elkaar en Koor&Stem, het Zing Ding. Het Zing Ding werd ook door de kinderen die met plezier proefpersoon speelden, het best beoordeeld. Koor&Stem loofde de grote creativiteit en flexibiliteit van het Zeppos team. En de jury kon zich daar alleen maar bij aansluiten. (uit het<a target='_blank' href='https://www.cera.be/~/media/CERA/Files/Nieuws/Maatschappelijke%20projecten/2014/20141010_cera_award/Het%20zing%20ding.pdf'>Cera document</a>)<br/><p>Het Zing Ding is helaas niet meer online te vinden. Via onderstaande link kan u een artikel lezen over de Cera-award.</p>"
    },
@@ -44,7 +44,7 @@
      "title": "Keep It Alive",
      "link": "Portfolio-KeepItAlive",
      "url": "https://www.youtube.com/watch?v=Kx7zZa361Xc",
-     "image": "../img/kta.jpg",
+     "image": "/img/kta.jpg",
      "summary": "Een <b>experimentele website</b>, gemaakt in een team van twee in het laatste jaar Multimedia en Communicatie Technologie. We gebruikte hiervoor Node.js, WebGL &amp; Three.js, Socket.io, MongoDB, Angular, Javascript, HTML en CSS<br/>",
      "text": "<p>Als mijn teamgenoot Ferre Lambert en ik zouden het web voor één keer op een heel andere manier benaderen. Het zou ons kunstmedium worden. De vraag; “Wat is het web vandaag” doemde op; ‘Snel’, ‘handig’, ‘duidelijk’, ‘clean’, ‘commercieel’, ‘aandachttrekkend’, ‘persoonlijke gegevens slurpend’,... ; een duidelijke weerspiegeling van de tijdsgeest. Dit is ook meteen alles waar wij met veel plezier een streep door hebben getrokken.</p><p>De titel spreekt voor zich, ‘iets moet in leven gehouden worden’. Wat dat is, dat weten we aanvankelijk niet. Hoe meer bezoekers er zijn, en hoe langer ze op onze site blijven, hoe meer hij floreert en van zichzelf prijs geeft. Krijgt hij zijn aandacht niet, zakt hij verder weg in het duister. Als kader heeft de website een verhaal. Ook dit wordt doorheen het proces langer. Gelukkig draag je als gebruiker niet alleen de verantwoordelijkheid over de website. Het co-ouderschap wordt echter anoniem gehouden. De andere gebruikers worden gevisualiseerd door paarse vuurvliegjes.</p><p>Keep it Alive is helaas niet meer online te vinden, maar we denken er wel aan om een 2.0 versie te maken</p> Je kan nog wel de werking bekijken op het filmpje dat te vinden is via onderstaande link</p></br>"
    },
@@ -52,7 +52,7 @@
       "title": "Huisstijl Neretva Ensemble",
      "link": "Portfolio-huisstijlNeretva",
      "url": "https://www.facebook.com/neretvaensemble/",
-     "image": "../img/neretva.jpg",
+     "image": "/img/neretva.jpg",
      "summary": "<b>Design van de huisstijl</b> voor het orkest waar ik in meespeel<br/>",
      "text": "<p><b>Design van de huisstijl</b> voor het orkest waar ik in meespeel. Het logo is gebaseerd op verscheidene zaken die met het orkest te maken hebben; de brug in Mostar die over de rivier 'Neretva' stroomt, de vorm van een orkest (de halfronde cirkel met de dirigent in het midden), een orgelpunt (muzikaal teken), en een zaal die je binnenkomt (als je naar het concert gaat). Ik heb bij het design ook zeker proberen rekening te houden met het karakter van de vereniging. Door hieronder op de link te klikken kan u zien hoe de huisstijl wordt toegepast op facebook. Ons logo zal altijd in thema gezet worden van de affiche van het eerstvolgende concert.</p> </br>"
    },
@@ -60,7 +60,7 @@
      "title": "Cupcake 3D",
      "link": "Portfolio-cupcake",
      "url": "https://www.youtube.com/watch?v=RHh4GGNtkAM",
-     "image": "../img/cupcake.jpg",
+     "image": "/img/cupcake.jpg",
      "summary": "Korte <b>3D animatie</b> in cinema4D<br/>",
      "text": "<p>Korte <b>3D animatie</b> gemaakt in cinema4D. Door hieronder op de knop te klikken kan je de animatie bekijken.</p></br>"
    },
@@ -68,7 +68,7 @@
      "title": "Outlines Lyrics Video",
      "link": "Portfolio-Lyricsvideo",
      "url": "https://www.youtube.com/watch?v=-lBTuiVBjgM",
-     "image": "../img/outlines.jpg",
+     "image": "/img/outlines.jpg",
      "summary": "Een <b>lyrics video</b> voor het nummer Outlines van Mike Mago & Dragonette. Gemaakt in Adobe AfterEffects<br/>",
      "text": "<p>Een stukje<b>lyrics video</b> voor het nummer Outlines van Mike Mago & Dragonette. Gemaakt in Adobe AfterEffects voor het vak Crossmedia Experiment in Grafische en Digitale media aan de AP-Hogeschool.</p></br>"
    }
