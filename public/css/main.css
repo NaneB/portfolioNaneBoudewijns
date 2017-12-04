@@ -4,37 +4,54 @@
 body{
     height: 100%;
     position: relative;
-    overflow-x: hidden;
-    font-family: 'Quicksand', sans-serif;
+    /*overflow-x: hidden;*/
+    font-family: 'Source Sans Pro', sans-serif;
     background-color: #e5e5e5;
+    line-height: 150%;
 }
 .section{
     height: 100vh;
+    min-width: 100%;
 }
 #work{
     background-color: #CCC;
 }
-nav{
-    height: 0;
-}
-h1, h2{
-    font-family: 'Satisfy', cursive;
-    color: coral;
+h1, h2, h3{
+    font-weight: bold;
+    color: #388;
 }
 h1{
+    letter-spacing: 10px;
+    border: #388 12px solid;
+    padding: 0.8em 0;
     display: block;
-    margin: 300px auto;
     text-align: center;
     font-size: 83pt;
-}
-h2{
-    text-align: center;
-    font-size: 22pt;
+    width: 35%;
+    margin: 0 auto;
+    vertical-align: center;
 }
 h3{
+    font-size: 75pt;
+    margin-bottom: 50px;
+}
+#home{
+    display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	-webkit-box-align: center;
+	align-items: center;
+}
+h2{
+    font-size: 22pt;
+    margin: 30px 0;
+}
+.post-title{
     font-weight: bold;
     font-size: 14pt;
-    margin-bottom: 18px;
+    padding-bottom: 2em;
 }
 p{
     margin-bottom: 12px;
@@ -43,7 +60,7 @@ p{
     height: auto;
     min-height: 100% !important;
     margin: 0 auto;
-    padding: 10% 0;
+    padding: 5% 0;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -52,7 +69,7 @@ p{
 .post{
     background-color: white;
     width: 380px;  
-    height: 380px;
+    height: 254px;
     margin: 0.5em;
 }
 .post, footer{
@@ -60,7 +77,7 @@ p{
 }
 a{
     text-decoration: none;
-    color: coral;
+    color: #388;
 }
 .italic{
     font-size: 10pt;
@@ -82,21 +99,32 @@ img{
     height: auto;
     margin-bottom: 15px;
 }
-#cv, #me{
+#cv, #bg1, #bg2{
     position: fixed;
     background-repeat: no-repeat;
     background-position: 20% top; 
     width: 100vw;
+    
 }
-#me{
+#bg1, #bg2{
     z-index: -2;
     top:0;
-    background-image: url(../img/me.jpg);
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain; 
     height: 100vh;
+    opacity: 0.32;
+}
+#bg1{
+    z-index: -1;
+    background-image: url(../img/801.png);
+    background-position: 33% ;
+}
+#bg2{
+    z-index: -3;
+    background-image: url(../img/802.png);
+    background-position: 63%;
 }
 #cv{
     background-image: url(../img/Cvmockup.png);
@@ -104,19 +132,28 @@ img{
     -moz-background-size: 80%;
     -o-background-size: 80%;
     background-size: 80%;
-    height: 100vh;
     top: 0;
-    z-index: -3;
+    height: 100vh;
+    z-index: -4;
     /*transform: translateY(185%);*/
 }
-footer, #cv-page a{
+footer, #cv-page a, .postEl #link{
     color: white;
-    background-color: cadetblue;
+    background-color: #388;
 }
 footer{
     position: absolute;
     bottom: 0;
     width: 100%;
+}
+.postEl #link{
+    padding: 10px 15px;
+    margin-bottom: 20px;
+}
+#cv-page a, .postEl #link{
+    display:inline-block; 
+    border-radius: 5px;
+    font-weight: bold;
 }
 #cv-page a{
     display:inline-block;
@@ -127,7 +164,19 @@ footer{
     font-weight: bold;
 }
 #about{
-    background-color: red; 
+    background-image: url(../img/about.jpg);
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+    background-position: left bottom;
+}
+#about span{
+    margin-top: 2%;
+    position: fixed;
+    display: block;
+    width: 40%;
+    left: 45%;
 }
 #fade{
     background-color: white;
@@ -138,4 +187,63 @@ footer{
     height: 100%;
     z-index: 6;
 }
-
+.right{
+    text-align: right;
+}
+.right, footer #name{
+    width: 49%;
+    display: inline-block;
+}
+.right img{
+    width: auto;
+    height: 20px;
+}
+b{
+    font-weight: bold;
+}
+#about img{
+    width: 20%;
+    height: auto;
+}
+#gaweg{
+    height: 0;
+    width: 0;
+}
+@media screen and (max-width: 1020px) {
+    #cv {
+        -webkit-background-size: 100%;
+        -moz-background-size: 100%;
+        -o-background-size: 100%;
+        background-size: 100%;
+    }
+}
+@media screen and (max-width: 860px) {
+    #cv {
+        -webkit-background-size: 123%;
+        -moz-background-size: 123%;
+        -o-background-size: 123%;
+        background-size: 123%;
+    }
+}
+@media screen and (max-width: 700px) {
+    #cv {
+        -webkit-background-size: 150%;
+        -moz-background-size: 150%;
+        -o-background-size: 150%;
+        background-size: 150%;
+    }
+}
+@media screen and (max-width: 630px) {
+    #cv-page a {
+         margin-top: 60vh;
+         margin-left: 33vw; 
+    }
+}
+@media screen and (max-width: 570px) {
+    #cv {
+        -webkit-background-size: 175%;
+        -moz-background-size: 175%;
+        -o-background-size: 175%;
+        background-size: 175%;
+    }
+}

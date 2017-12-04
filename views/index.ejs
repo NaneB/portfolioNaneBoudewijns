@@ -1,13 +1,15 @@
 <% include header %>
     <div id="fade"></div>
-    <div id="me"></div>
+    <div id="bg1"></div>
+    <div id="bg2"></div>
     <div id="home" class="section">
-        <h1>Nane</h1>
+        <h1>NANE.</h1>
     </div>
     <div id="about" class="section">
+        <span>
         <h3>Hallo,</h3>
             <p>
-            Mijn naam is Nane Boudewijns.
+            Mijn naam is <b>Nane Boudewijns</b>.
             Op 12 augustus 1993 werd ik
             geboren. Als kind was ik graag bezig
             met het creëren van creatieve en
@@ -20,15 +22,18 @@
             mooie grafische of digitale uitingen.
             Rustig, zorgvuldig en ruimdenkend
             zijn woorden die me omschrijven.</p>
+        
+        <p>
+            Ik behaalde mijn <b>bachelor Multimedia en Communicatie Technologie</b> aan de Karel de Grote-Hogeschool in 2015. Daarna besloot ik <b>Grafische en Digitale Media</b> aan AP te studeren onder creditcontract. Hier behaalde ik in twee jaar nog 25 creditbewijzen. In deze 5 jaar studeren heb ik vooral geleerd dingen zelfstandig uit te zoeken. Dit komt van pas in de altijd veranderende multimedia sector. Met de ruime basis die ik heb meegekregen uit mijn studies zou ik graag aan de slag gaan om mijn kennis nog verder uit te breiden. 
+        </p>
+        </span>
     </div>
     <div id="work" class="section container">
       <% posts.forEach(function(post){ %>
         <div class="post">
-        <h3><a href="<%- post.link %>">
-            <%- post.title %></a></h3>
-        <p class="italic"><%- post.date %></p>
+        <a class="post-title" href="<%- post.link %>"><%- post.title %></a>
         <p><%- post.summary %>
-            <a class="nowrap" href="<%- post.link %>">Read more</a>
+            <a class="nowrap" href="<%- post.link %>">- Bekijk dit project -</a>
         </p>
 
         </div>

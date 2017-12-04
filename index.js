@@ -23,7 +23,8 @@ app.get('/', function(req, res) {
 });
 
 
-app.get(/^\/(\w*-\w*-\d\d\/\d\d)$/, function(req, res) {
+//app.get(/^\/(\w*-\w*-\d\d\/\d\d)$/, function(req, res) {
+app.get(/^\/(Portfolio-\w*)$/, function(req, res) {
      var postId = req.params[0];
      var teller = 0;
      var blogpost = "";

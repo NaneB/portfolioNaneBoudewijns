@@ -1,14 +1,25 @@
-
+$('#cv').fadeOut();
 
 function main() { 
 
           function parallax(){
                 var scrolled = $(window).scrollTop();
                 
-                $('#me').css('top', -(scrolled * 0.5) + 'px');
-                //$('.scroll').css('top', 101-(scrolled * 0.095) + 'vh');
+                $('#bg1').css('top', -(scrolled * 2.5) + 'px');
+                $('#bg2').css('top', -(scrolled * -(0.25)) + 'px');
+                if(scrolled>$(window).height()*2){
+                    $('#cv').fadeIn();
+                    $('#bg1').fadeOut();
+                    $('#bg2').fadeOut();
+                }else{
+                    $('#cv').fadeOut();
+                    $('#bg1').fadeIn();
+                    $('#bg2').fadeIn();
+                    
+                }
+                $('#about span').css('top', 101-(scrolled * 0.095) + 'vh');
 
-                //$('.scroll').animate({'opacity':'1'},1500);
+                $('#about span').animate({'opacity':'1'},1500);
 
             }
             $(window).scroll(function(e){
@@ -18,6 +29,6 @@ function main() {
 }
 window.onload = function() {
     main();   
-    $('#fade').fadeOut( 3500 );
+    $('#fade').fadeOut( 2000 );
 }
 
